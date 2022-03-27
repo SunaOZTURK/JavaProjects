@@ -3,7 +3,6 @@ package tr.edu.maltepe.oop;
 public class Books {
 
     private String bookname;
-    private long isbn;
 
     public Books(String name){
         bookname = name;

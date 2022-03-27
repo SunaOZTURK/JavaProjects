@@ -17,7 +17,7 @@ public class MaltepeLibrary {
     public void list_books (){
         for (int i=0; i< books.size();i++ ){
             Books temp = (Books) books.get(i);
-            System.out.println(temp.getBookname() + "            " + temp.getIsbn());;
+            System.out.println(temp.getBookname());
         }
     }
 
@@ -26,17 +26,19 @@ public class MaltepeLibrary {
         {
             person.borrowBook(book);
             removeBook(book);
-            System.out.println(book.getBookname()+" Adlı Kitap "+person.getName()+" Adlı Kişeye Teslim Edildi.");
+            System.out.println(book.getBookname()+" book was given to "+person.getName());
+            System.out.println(" ");
 
         }
         else{
-            System.out.println(book.getBookname()+" Adlı Kitap Şuanda Yok.");
+            System.out.println(book.getBookname()+" is not in the library now.");
+            System.out.println(" ");
         }
     }
     public void borrowBook(Person person, Books book){
         person.lendBook(book);
         addBook(book);
-        System.out.println(book.getBookname()+" Adlı Kitap "+person.getName()+" Adlı Kişeden Teslim Alındı.");
-
+        System.out.println(book.getBookname()+" book was taken from "+person.getName());
+        System.out.println(" ");
     }
 }

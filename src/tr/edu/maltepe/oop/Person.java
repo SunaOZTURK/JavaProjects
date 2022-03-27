@@ -48,18 +48,17 @@ public class Person {
     }
 
     public void  ShowInfo()
-    {
+    {   System.out.println(" ");
         System.out.println(personType+" ID : "+ id + ", " +personType+" Name : "+ name);
     }
 
     public void borrowBook (Books bbook){
         books.add(bbook);
-
     }
 
     public void ShowHaveBooks(){
         System.out.println("");
-        System.out.println(name+" has borrowed this books");
+        System.out.println(name+" has borrowed these books   ");
         System.out.println("--------------------------------");
         for (int i = 0; i< books.size();i++)
         {

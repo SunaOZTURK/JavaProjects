@@ -8,8 +8,8 @@ public class Main {
         Profs prf1 = new Profs(2002020,"Ensar Gül ",50,25);
         Students std1 = new Students(100102933,"Suna ÖZTÜRK", 39,prf1);
 
-        std1.ShowInfo();
-        prf1.ShowInfo();
+        // std1.ShowInfo();
+        //prf1.ShowInfo();
 
         vbook1 = new Books("Java Programing");
         vbook2 = new Books("C Programming  ");
@@ -22,12 +22,16 @@ public class Main {
         System.out.println("Book List                     ");
         System.out.println("------------------------------");
         myLib.list_books();
+        System.out.println(" ");
 
         myLib.lendBook(prf1,vbook1);
         myLib.lendBook(std1,vbook2);
+
         myLib.lendBook(std1,vbook1);
 
         myLib.borrowBook(prf1,vbook1);
+        myLib.lendBook(prf1,vbook3);
+
         myLib.lendBook(std1,vbook1);
 
         prf1.ShowHaveBooks();
