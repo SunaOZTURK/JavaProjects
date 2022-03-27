@@ -1,4 +1,4 @@
-package oop;
+package tr.edu.maltepe.oop;
 
 public class Students extends Person {
 

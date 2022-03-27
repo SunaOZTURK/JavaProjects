@@ -1,6 +1,7 @@
-package oop;
+package tr.edu.maltepe.oop;
 
 public class Profs extends Person {
+
 
     public Profs(long id, String name, int age, int studentCount) {
         super(id, name, age);
