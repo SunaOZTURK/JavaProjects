@@ -5,14 +5,10 @@ public class Books {
     private String bookname;
     private long isbn;
 
-    public Books(String name, long isbnno){
+    public Books(String name){
         bookname = name;
-        isbn = isbnno;
     }
 
-    public void isbn(long isbn){
-        System.out.println("ISBN KODU :" + isbn);
-    }
 
     public String getBookname() {
         return bookname;
@@ -22,11 +18,4 @@ public class Books {
         this.bookname = bookname;
     }
 
-    public long getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(long isbn) {
-        this.isbn = isbn;
-    }
 }

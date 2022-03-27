@@ -11,23 +11,23 @@ public class Main {
         std1.ShowInfo();
         prf1.ShowInfo();
 
-        vbook1 = new Books("Java Programing",123456789);
-        vbook2 = new Books("C Programming  ",123456789);
-        vbook3 = new Books("C++ Programming",123456789);
+        vbook1 = new Books("Java Programing");
+        vbook2 = new Books("C Programming  ");
+        vbook3 = new Books("C++ Programming");
 
         myLib.addBook(vbook1);
         myLib.addBook(vbook2);
         myLib.addBook(vbook3);
 
-        System.out.println("Book Name                 ISBN");
+        System.out.println("Book List                     ");
         System.out.println("------------------------------");
         myLib.list_books();
 
-      myLib.lendBook(prf1,vbook1);
-      myLib.lendBook(std1,vbook2);
-      myLib.lendBook(std1,vbook1);
+        myLib.lendBook(prf1,vbook1);
+        myLib.lendBook(std1,vbook2);
+        myLib.lendBook(std1,vbook1);
 
-      myLib.borrowBook(prf1,vbook1);
+        myLib.borrowBook(prf1,vbook1);
         myLib.lendBook(std1,vbook1);
 
         prf1.ShowHaveBooks();
