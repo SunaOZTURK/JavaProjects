@@ -59,7 +59,7 @@ public class Person {
 
     public void ShowHaveBooks(){
         System.out.println(name+" Adlı Kişideki Kitaplar");
-
+        System.out.println("------------------------------");
         for (int i = 0; i< books.size();i++)
         {
             System.out.println(books.get(i).getBookname());
