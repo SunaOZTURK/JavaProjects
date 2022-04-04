@@ -15,11 +15,8 @@ public class Students extends Person implements DoSport {
     @Override
     public void ShowInfo() {
         super.ShowInfo();
-        System.out.println("Override from Method Students!");
         System.out.println("Connected professor :"+getParentProf().getName());
     }
-
-
 
 
     public Profs getParentProf() {
@@ -32,11 +29,11 @@ public class Students extends Person implements DoSport {
 
     @Override
     public void PlayFootball(SportsCenter sportsCenter) {
-
+        sportsCenter.enterGYM(this);
     }
 
     @Override
     public void Swim(SportsCenter sportsCenter) {
-
+        sportsCenter.enterGYM(this);
     }
 }

@@ -1,5 +1,4 @@
 package tr.edu.maltepe.oop;
-
 import java.util.Vector;
 
 public class Person {

@@ -8,13 +8,13 @@ public class SportsCenter {
 
     }
 
-    public  void SalonaGit(Person person){
+    public  void enterGYM(Person person){
         members.add(person);
-        System.out.println(person.getName() + "Spora Başladı");
+        System.out.println(person.getName() + " enter the gym.");
     }
-    public  void SalondanCik(Person person){
+    public  void leftGYM(Person person){
         members.remove(person);
-        System.out.println(person.getName() + "Spordan Ayrıldı");
+        System.out.println(person.getName() + " left the gym");
     }
 
     public void list_member (){

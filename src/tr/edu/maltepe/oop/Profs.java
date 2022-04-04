@@ -18,19 +18,17 @@ public class Profs extends Person implements DoSport {
 
     @Override
     public void ShowInfo() {
-
         super.ShowInfo();
-        System.out.println("Override from Method Profs!");
         System.out.println("Number of connected students : "+getStudentCount());
     }
 
     @Override
     public void PlayFootball(SportsCenter sportsCenter) {
-        sportsCenter.SalonaGit(this);
+        sportsCenter.enterGYM(this);
     }
 
     @Override
     public void Swim(SportsCenter sportsCenter) {
-        System.out.println("Ben Yüzme Bilmiyorum.");
+        sportsCenter.enterGYM(this);
     }
 }
