@@ -1,6 +1,6 @@
 package tr.edu.maltepe.oop;
 
-public class Students extends Person {
+public class Students extends Person implements DoSport {
 
 
     private Profs parentProf;
@@ -15,8 +15,10 @@ public class Students extends Person {
     @Override
     public void ShowInfo() {
         super.ShowInfo();
+        System.out.println("Override from Method Students!");
         System.out.println("Connected professor :"+getParentProf().getName());
     }
+
 
 
 
@@ -26,5 +28,15 @@ public class Students extends Person {
 
     public void setParentProf(Profs parentProf) {
         this.parentProf = parentProf;
+    }
+
+    @Override
+    public void PlayFootball(SportsCenter sportsCenter) {
+
+    }
+
+    @Override
+    public void Swim(SportsCenter sportsCenter) {
+
     }
 }

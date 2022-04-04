@@ -1,6 +1,6 @@
 package tr.edu.maltepe.oop;
 
-public class Profs extends Person {
+public class Profs extends Person implements DoSport {
 
 
     public Profs(long id, String name, int age, int studentCount) {
@@ -20,11 +20,17 @@ public class Profs extends Person {
     public void ShowInfo() {
 
         super.ShowInfo();
+        System.out.println("Override from Method Profs!");
         System.out.println("Number of connected students : "+getStudentCount());
     }
 
-    public void Borrow(long bookisbn){
-
+    @Override
+    public void PlayFootball(SportsCenter sportsCenter) {
+        sportsCenter.SalonaGit(this);
     }
 
+    @Override
+    public void Swim(SportsCenter sportsCenter) {
+        System.out.println("Ben Yüzme Bilmiyorum.");
+    }
 }
